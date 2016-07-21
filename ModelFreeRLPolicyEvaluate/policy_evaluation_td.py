@@ -31,7 +31,7 @@ def td(alpha, gamma, state_sample, action_sample, reward_sample):
 
 if __name__ == "__main__":
     s, a, r = grid.gen_randompi_sample(1000000)
-    value = td(0.05, 0.5, s, a, r)
+    value = td(0.2, 0.5, s, a, r)
     print "Time difference value evaluation:"
     for state in xrange(1,6):
         print "%d:%f\t"%(state, value[state])
